@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nemejohn.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="shortcut icon" href="images/nj.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="background_container">
+            <div class="nav-bar" id="nav-bar">
+                <a href="index.html">
+                    <svg id="logo" width="676" height="140" viewBox="0 0 676 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="circle" d="M653.38 101.494C655.684 103.798 658.543 104.96 661.834 104.96C665.035 104.96 667.796 103.784 669.988 101.474C672.279 99.1732 673.434 96.3211 673.434 93.0396C673.434 89.7582 672.279 86.9061 669.988 84.6056C667.796 82.2949 665.035 81.1196 661.834 81.1196C658.543 81.1196 655.684 82.2814 653.38 84.5854C651.076 86.8894 649.914 89.7486 649.914 93.0396C649.914 96.3307 651.076 99.1899 653.38 101.494Z" stroke="white" stroke-width="4"/>
+                        <path d="M592.953 31.7308C590.522 32.9463 588.37 34.4563 586.503 36.2587V31.8557V29.8557H584.503H572.855H570.855V31.8557V102V104H572.855H584.503H586.503V102V63.2157C586.503 56.1874 588.217 51.1653 591.334 47.8209C594.565 44.4441 598.913 42.6877 604.599 42.6877C610.212 42.6877 614.42 44.4079 617.472 47.6831L617.48 47.6915L617.488 47.6998C620.516 50.8751 622.183 55.6384 622.183 62.3197V102V104H624.183H635.703H637.703V102V60.6557C637.703 50.5707 634.954 42.5585 629.164 36.9522C623.444 31.3271 616.001 28.5757 607.031 28.5757C601.97 28.5757 597.272 29.6174 592.968 31.7233L592.961 31.727L592.953 31.7308Z" stroke="white" stroke-width="4"/>
+                        <path d="M553.828 104H555.828V102V60.6558C555.828 53.9258 554.545 48.0776 551.878 43.1967C549.315 38.3499 545.709 34.681 541.069 32.2646C536.488 29.7938 531.382 28.5758 525.796 28.5758C520.495 28.5758 515.63 29.6108 511.236 31.7162L511.229 31.7197L511.221 31.7233C508.727 32.9438 506.527 34.4634 504.628 36.281V7.27979V5.27979H502.628H490.98H488.98V7.27979V102V104H490.98H502.628H504.628V102V63.2158C504.628 56.1875 506.342 51.1654 509.459 47.821C512.69 44.4442 517.038 42.6878 522.724 42.6878C528.337 42.6878 532.545 44.408 535.597 47.6832L535.605 47.6916L535.613 47.6999C538.641 50.8752 540.309 55.6385 540.309 62.3198V102V104H542.309H553.828Z" stroke="white" stroke-width="4"/>
+                        <path d="M420.795 100.413L420.807 100.42C426.5 103.583 432.811 105.152 439.698 105.152C446.665 105.152 453.058 103.585 458.834 100.426C464.619 97.2622 469.193 92.7768 472.531 87.0047C475.973 81.1149 477.666 74.3592 477.666 66.7996C477.666 59.2526 476.021 52.5432 472.667 46.7368C469.417 40.9634 464.928 36.5131 459.219 33.4294C453.524 30.2682 447.173 28.7036 440.21 28.7036C433.247 28.7036 426.896 30.2682 421.201 33.4294C415.485 36.5167 410.956 41.0129 407.624 46.8662L407.624 46.8662L407.619 46.8751C404.355 52.6766 402.754 59.3382 402.754 66.7996C402.754 74.3334 404.307 81.0683 407.473 86.9478L407.482 86.9641L407.491 86.9801C410.736 92.7493 415.176 97.2412 420.795 100.413ZM458.581 80.1232L458.573 80.1373L458.565 80.1515C456.517 83.7753 453.838 86.4352 450.531 88.2041C447.153 90.0107 443.552 90.9116 439.698 90.9116C435.835 90.9116 432.328 90.0492 429.14 88.3422C426.018 86.5868 423.465 83.9426 421.495 80.3236C419.638 76.7573 418.658 72.2782 418.658 66.7996C418.658 61.416 419.677 56.9841 421.615 53.4186C423.586 49.7915 426.138 47.1925 429.252 45.5219L429.259 45.5179L429.267 45.5138C432.543 43.7196 436.136 42.8156 440.082 42.8156C443.936 42.8156 447.487 43.7163 450.769 45.5138L450.786 45.5227L450.802 45.5313C454.006 47.2098 456.641 49.818 458.693 53.4477C460.704 57.0068 461.762 61.4278 461.762 66.7996C461.762 72.1596 460.667 76.5699 458.581 80.1232Z" stroke="white" stroke-width="4"/>
+                        <path d="M376.541 19.533L376.561 19.5538L376.581 19.574C378.501 21.494 380.891 22.4638 383.627 22.4638C386.355 22.4638 388.719 21.498 390.565 19.5539C392.472 17.6373 393.435 15.2546 393.435 12.5278C393.435 9.80096 392.472 7.41825 390.565 5.50173C388.719 3.55763 386.355 2.5918 383.627 2.5918C380.891 2.5918 378.501 3.56162 376.581 5.48158L376.561 5.50178L376.541 5.52255C374.721 7.44985 373.819 9.82671 373.819 12.5278C373.819 15.2289 374.721 17.6057 376.541 19.533ZM362.043 135.28V137.28H364.043H370.827C377.18 137.28 382.35 135.759 386.004 132.4C389.731 128.976 391.387 123.764 391.387 117.232V31.8558V29.8558H389.387H377.739H375.739V31.8558V116.976C375.739 119.836 375.09 121.326 374.323 122.045L374.3 122.067L374.277 122.09C373.576 122.79 372.003 123.424 368.907 123.424H364.043H362.043V125.424V135.28Z" stroke="white" stroke-width="4"/>
+                        <path d="M361.597 73.2796H363.401L363.586 71.4854C363.849 68.9505 363.981 66.5347 363.981 64.2396C363.981 57.5434 362.506 51.4894 359.512 46.1291C356.601 40.6776 352.406 36.3979 346.967 33.3156C341.509 30.2225 335.272 28.7036 328.317 28.7036C321.191 28.7036 314.788 30.2649 309.162 33.4393C303.61 36.5355 299.289 41.0029 296.215 46.7893C293.135 52.5858 291.629 59.2757 291.629 66.7996C291.629 74.3334 293.182 81.0683 296.348 86.9478L296.348 86.9478L296.354 86.9592C299.511 92.7314 303.864 97.2292 309.402 100.406L309.414 100.413C315.033 103.585 321.35 105.152 328.317 105.152C337.024 105.152 344.462 102.969 350.501 98.4854L350.509 98.4797L350.517 98.4738C356.494 93.9456 360.504 88.0716 362.5 80.9042L363.206 78.3676H360.573H348.029H346.607L346.14 79.7106C344.914 83.236 342.786 86.0492 339.719 88.1978C336.8 90.2176 333.043 91.2956 328.317 91.2956C322.637 91.2956 317.873 89.5382 313.912 86.0497C310.533 82.9346 308.438 78.7297 307.731 73.2796H361.597ZM345.294 51.4512L345.3 51.4614L345.306 51.4715C346.75 53.7933 347.624 56.5546 347.874 59.8076H307.923C308.757 54.6206 310.829 50.6238 314.045 47.6728C317.839 44.2692 322.388 42.5596 327.805 42.5596C331.614 42.5596 335.009 43.3508 338.028 44.8992L338.055 44.9131L338.083 44.9262C341.141 46.379 343.533 48.5424 345.294 51.4512Z" stroke="white" stroke-width="4"/>
+                        <path d="M278.873 104H280.873V102V60.6557C280.873 53.9198 279.588 48.0672 276.916 43.1837C274.268 38.3441 270.624 34.6795 265.986 32.2644C261.395 29.7888 256.202 28.5757 250.457 28.5757C244.565 28.5757 239.17 30.031 234.32 32.9596C230.617 35.195 227.697 38.13 225.574 41.7401C223.3 38.003 220.282 35.0161 216.523 32.8173C211.658 29.9714 206.095 28.5757 199.897 28.5757C194.916 28.5757 190.297 29.6198 186.075 31.7308L186.067 31.7348L186.059 31.7388C183.69 32.9499 181.586 34.4645 179.753 36.2775V31.8557V29.8557H177.753H166.105H164.105V31.8557V102V104H166.105H177.753H179.753V102V63.3437C179.753 56.3094 181.47 51.2847 184.592 47.9403L184.599 47.9323L184.606 47.9242C187.757 44.4739 192.01 42.6877 197.593 42.6877C203.017 42.6877 207.093 44.3955 210.066 47.665L210.082 47.6826L210.098 47.6998C213.126 50.8751 214.793 55.6384 214.793 62.3197V102V104H216.793H228.313H230.313V102V63.3437C230.313 56.3094 232.03 51.2847 235.152 47.9403L235.159 47.9323L235.166 47.9242C238.317 44.4739 242.57 42.6877 248.153 42.6877C253.577 42.6877 257.653 44.3955 260.626 47.665L260.642 47.6826L260.658 47.6998C263.686 50.8751 265.353 55.6384 265.353 62.3197V102V104H267.353H278.873Z" stroke="white" stroke-width="4"/>
+                        <path d="M150.347 73.2796H152.151L152.336 71.4854C152.599 68.9504 152.731 66.5347 152.731 64.2396C152.731 57.5434 151.256 51.4894 148.262 46.1291C145.351 40.6776 141.156 36.3979 135.717 33.3156C130.259 30.2225 124.022 28.7036 117.067 28.7036C109.941 28.7036 103.538 30.2649 97.9124 33.4393C92.3597 36.5355 88.0387 41.0029 84.9647 46.7893C81.8853 52.5858 80.3789 59.2757 80.3789 66.7996C80.3789 74.3334 81.9321 81.0683 85.098 86.9478L85.0979 86.9478L85.1042 86.9592C88.2608 92.7314 92.6143 97.2292 98.1515 100.406L98.1637 100.413C103.783 103.585 110.1 105.152 117.067 105.152C125.774 105.152 133.212 102.969 139.251 98.4854L139.259 98.4797L139.267 98.4738C145.244 93.9456 149.254 88.0716 151.25 80.9042L151.956 78.3676H149.323H136.779H135.357L134.89 79.7106C133.664 83.236 131.536 86.0492 128.469 88.1978C125.55 90.2176 121.793 91.2956 117.067 91.2956C111.387 91.2956 106.623 89.5382 102.662 86.0497C99.2832 82.9346 97.1883 78.7297 96.4806 73.2796H150.347ZM134.044 51.4512L134.05 51.4614L134.056 51.4715C135.5 53.7933 136.374 56.5546 136.624 59.8076H96.6734C97.5065 54.6206 99.5791 50.6238 102.795 47.6728C106.589 44.2692 111.138 42.5596 116.555 42.5596C120.364 42.5596 123.759 43.3508 126.778 44.8992L126.805 44.9131L126.833 44.9262C129.891 46.379 132.283 48.5424 134.044 51.4512Z" stroke="white" stroke-width="4"/>
+                        <path d="M24.953 31.7308C22.5222 32.9463 20.3698 34.4563 18.5035 36.2587V31.8557V29.8557H16.5035H4.85547H2.85547V31.8557V102V104H4.85547H16.5035H18.5035V102V63.2157C18.5035 56.1874 20.2172 51.1653 23.3336 47.8209C26.5648 44.4441 30.9131 42.6877 36.5995 42.6877C42.2122 42.6877 46.4203 44.4079 49.4723 47.6831L49.4801 47.6915L49.488 47.6998C52.5156 50.8751 54.1835 55.6384 54.1835 62.3197V102V104H56.1835H67.7035H69.7035V102V60.6557C69.7035 50.5707 66.9537 42.5585 61.1642 36.9522C55.4437 31.3271 48.0015 28.5757 39.0315 28.5757C33.9699 28.5757 29.2717 29.6174 24.9684 31.7233L24.9607 31.727L24.953 31.7308Z" stroke="white" stroke-width="4"/>
+                    </svg>
+                </a>
+                <div class="unordered-list" id="unordered-list">
+                    <div onclick="closemenu()" id="close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="toggle">
+                        <div class="image"><img src="images/p.jpg" alt=""></div>
+                        <h3>Nwagboo John</h3>
+                        <p>Front-End Developer</p>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/profile.php?id=100091489970441" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/nemejohn62" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.behance.net/nemejohn" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                            <a href="https://wa.me/+2349118166827/?text= Hello, John this is a client." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.twitter.com/johnNeme35747" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li onclick="listitem()"><a href="#about">About</a></li>
+                        <li onclick="listitem()"><a href="#services">Services</a></li>
+                        <li onclick="listitem()"><a href="#portfolio">Portfolio</a></li>
+                        <li onclick="listitem()"><a href="#blogs">Blogs</a></li>
+                        <li onclick="listitem()"><a href="#contact">Contact</a></li>
+                    </ul> 
+                    <a href="hire-me.html" target="_blank"><button>Hire Me</button></a>
+                </div>
+                <div onclick="openmenu()" id="menu"><i class='bx bx-menu'></i></div>
+            </div>
+
+            <div class="hero-section">
+                <div class="container">
+                    <h2>Hello, I'm</h2>
+                    <h1>John</h1>
+                    <h2>a <span class="auto-type"></span></h2>
+                    <p>
+                        Hello! I’m John, a passionate Front-End Developer with one year of experience in 
+                        creating dynamic and responsive web applications. My journey in web development has equipped 
+                        me with a solid foundation in HTML, CSS, and JavaScript.
+                    </p>
+                    <a href="https://wa.me/+2349118166827/?text= Hello, I'm ______ a client. Have a project in mind." target="_blank"><button class="shake-top">Let's Chat</button></a>
+                    <div class="connect">
+                        <a href="mailto:nemejohn62@gmail.com" target="_blank">nemejohn62@gmail.com <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="about" id="about">
+            <div class="container">
+                <div class="about-folder">
+                    <div class="bio-image"><img src="images/aboutme-typing2 (1).png" alt=""></div>
+                    <div class="bio-content">
+                        <h1>My Bio</h1>
+                        <p>
+                            I embarked on my journey as a frontend developer in 2023. With just a year of experience, 
+                            I successfully established and led a tech company from scratch, demonstrating strong leadership 
+                            and strategic vision.
+                        </p>
+                        <div class="technical-skills">
+                            <div class="skills">
+                                <h4>Html5:</h4>
+                                <p>85%</p>
+                            </div>
+                            <div class="skills">
+                                <h4>CSS:</h4>
+                                <p>75%</p>
+                            </div>
+                            <div class="skills">
+                                <h4>JavaScript:</h4>
+                                <p>70%</p>
+                            </div>
+                            <div class="skills">
+                                <h4>UI/UX:</h4>
+                                <p>85%</p>
+                            </div>
+                            <div class="skills">
+                                <h4>Creativity:</h4>
+                                <p>80%</p>
+                            </div>
+                        </div>
+                        <a href="about-me.html"><button>More Info</button></a>
+                        <a href="Neme John-Resume.pdf" download=""><button>Download CV</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services" id="services">
+            <div class="container">
+                <h2>My Services</h2>
+                <p>
+                    With a keen eye for detail and a passion for creating exceptional digital experiences, 
+                    I am committed to delivering high-quality front-end solutions that drive your business forward.
+                </p>
+                <div class="flex-service">
+                    <div class="service-content">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Blog, E-Commerce</p>
+                    </div>
+                    <div class="service-content">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Mobile App, Website Design</p>
+                    </div>
+                    <div class="service-content">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>Creativity</h3>
+                        <p>Artistic Vision, Beautiful Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <p>What I do</p>
+                <h1>My Recent Project</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/church-image.png" alt="">
+                        <a href="">
+                            <div class="layer">
+                                <h3>Church Website</h3>
+                                <p>Web Development Upcoming...</p>
+                                <a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work">
+                        <img src="images/main-cashpay-image.png" alt="">
+                        <a href="">
+                            <div class="layer">
+                                <h3>Fintech Mobile App (Cashpay)</h3>
+                                <p>UI/UX Design Upcoming...</p>
+                                <a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work">
+                        <img src="images/school-site.png" alt="">
+                        <a href="">
+                            <div class="layer">
+                                <h3>School Website</h3>
+                                <p>Web Design</p>
+                                <a href="https://neme-john.webflow.io" class="link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work">
+                        <img src="images/music-app-design.png" alt="">
+                        <a href="">
+                            <div class="layer">
+                                <h3>Music App</h3>
+                                <p>UI/UX Design (Coming Soon..)</p>
+                                <a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work">
+                        <img src="images/Portfolio2.png" alt="">
+                        <a href="">
+                            <div class="layer">
+                                <h3>Portfolios</h3>
+                                <p>Web Development/UIUX</p>
+                                <a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work">
+                        <img src="images/e-commerce-image.png" alt="">
+                        <a href="">
+                            <div class="layer">
+                                <h3>E-commerce Websites</h3>
+                                <p>Web Development/UIUX (Coming soon)</p>
+                                <a href="#" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <div class="container">
+                <P>Testimonials</P>
+                <h1>What my client Say</h1>
+                <div class="testimonial-slider">
+                    <div class="comments">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>
+                            <i class="fa-solid fa-quote-left"></i> Fnag Tech classes has boosted my confidence in coding. I feel more prepared 
+                            to tackle real-world problems now.
+                        </p>
+                        <div class="client-info">
+                            <div class="client-image"><img src="images/student-image.png" alt=""></div>
+                            <div class="client-name">
+                                <h4>Alex John</h4>
+                                <p>Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>
+                            <i class="fa-solid fa-quote-left"></i> We’ve seen a noticeable increase in user satisfaction and retention since 
+                            implementing the new design. It’s been a game-changer for our business.
+                        </p>
+                        <div class="client-info">
+                            <div class="client-image"><img src="images/business-man2.png" alt=""></div>
+                            <div class="client-name">
+                                <h4>Igwe Samuel</h4>
+                                <p>Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <p>
+                            <i class="fa-solid fa-quote-left"></i> Communication throughout the project was seamless. The developer kept me informed 
+                            at every stage and was always open to feedback.
+                        </p>
+                        <div class="client-info">
+                            <div class="client-image"><img src="images/Female-enterpreneur2.png" alt=""></div>
+                            <div class="client-name">
+                                <h4>Leonard Chioma</h4>
+                                <p>Enterpreneur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message">
+            <div class="container">
+                <div class="message-box">
+                    <h1>Have a project on your mind.</h1>
+                    <p>
+                        Let's bring your imagination to reality. Remember every <b>GREAT</b>
+                        project starts from an imagination. The accomplishment of any project
+                        begins with you opening up.
+                    </p>
+                    <a href="https://wa.me/+2349118166827/?text= Hello I'm ______ a client. Have a project in mind." target="_blank"><button>Contact Me</button></a>
+                </div>
+                <div class="message-image"><img src="images/message-img.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="blogs" id="blogs">
+            <div class="container">
+                <h1>Our Blogs</h1>
+                <p>
+                    From tackling common challenges to exploring the latest trends in web development and more, my goal is to help you grow and succeed in your own journey.
+                </p>
+                <div class="blog-flex">
+                    <a href="blog1.html">
+                        <div class="blog">
+                            <div class="blog-image"><img src="images/front-end-image.png" alt=""></div>
+                            <span class="date">Sep. 02, 2024</span>
+                            <h3>Why Front-End Development is so important</h3>
+                            <p> 
+                                Front-end development is increasingly important for the success of a 
+                                business as a growing number of users are embracing the digital revolution.
+                                Explore more...
+                            </p>
+                        </div>
+                    </a>
+                    <a href="blog2.html">
+                        <div class="blog">
+                            <div class="blog-image"><img src="images/exercise.png" alt=""></div>
+                            <span class="date">Sep. 10, 2024</span>
+                            <h3>The Importance of Exercise: A Path to a Healthier Life</h3>
+                            <p> 
+                                Exercise is often touted as a cornerstone of a healthy lifestyle, and for good reason. Regular physical 
+                                activity offers a multitude of benefits that can enhance your physical, menta... 
+                            </p>
+                        </div>
+                    </a>
+                    <a href="blog5.html">
+                        <div class="blog">
+                            <div class="blog-image"><img src="images/bible-studying2.png" alt=""></div>
+                            <span class="date">Sep. 11, 2024</span>
+                            <h3>Must God be first? Here is why</h3>
+                            <p> 
+                                Putting God first in our lives will enable us to live more joyful lives with the Lord. 
+                                When we set up anything above God in our life, we are setting an idol above God. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <a href="blog1.html#categories">See more <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="container">
+                <p>Contact Me</p>
+                <h1>Have a Project?</h1>
+                <p>Feel free let's bring your imagination to reality</p>
+                <div class="contact-flex">
+                    <form action="https://formsubmit.co/cbe23280be3d292646ba83901e594cc1" method="POST" class="contact-inputs">
+                        <div class="input-group">
+                            <input type="text" name="text" required>
+                            <label for="text">Full Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-group input-group2">
+                            <textarea name="message" cols="30" rows="7" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Contact Info</h3>
+                        <a href="tel:+2349118166827" target="_blank"><p><i class="fa-solid fa-phone"></i>+2349118166827</p></a>
+                        <a href="tel:+2349130673927" target="_blank"><p><i class="fa-solid fa-phone"></i>+2349130673927</p></a>
+                        <a href="mailto:nemejohn62@gmail.com" target="_blank"><p><i class="fa-solid fa-envelope"></i>nemejohn62@gmail.com</p></a>
+                        <a href="https://nemejohn.github.io/portfolio" target="_blank"><p><i class="fa-solid fa-earth-americas"></i>nemejohn.github.io/portfolio</p></a>
+                        <div class="contact-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100091489970441" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/nemejohn62" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.behance.net/nemejohn" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                            <a href="https://wa.me/+2349118166827/?text= Hello, John this is a client." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.twitter.com/johnNeme35747" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p> Copyright © 2024 All rights reserved | nemejohn</p>
+        </footer>
+
+    </body>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="portfolio.js"></script>
+        
+</html>
